@@ -23,6 +23,7 @@ const [D2,SetJD2] = useState(false)
 function Iniciar(){
     SetJuegoIniciado(true)
     SetComparar(false) 
+     setResultado('')
 }
 
 function volver(){
