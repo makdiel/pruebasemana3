@@ -1,4 +1,4 @@
-import { View, Text, TextInput, Button } from 'react-native'
+import { View, Text, TextInput, Button, FlatList } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import { contextPartida } from '../Provider/PartidasProvider';
 import { Partida } from '../Modelos/Partidas';
@@ -59,6 +59,7 @@ useEffect(()=>{
       { !juegoIniciado? (
          <Button title='INICIAR' onPress={(Iniciar)}></Button>
       ) : (
+        
         <><Button title=' A1 ' onPress={(PresionaA1)}></Button>
           <Button title=' A2 ' onPress={(PresionaA2)}></Button>
           <Button title=' A3 ' onPress={(PresionaA3)}></Button>
